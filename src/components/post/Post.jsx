@@ -1,4 +1,5 @@
 import "./post.scss";
+import { postsData } from "../../data/data";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
@@ -8,7 +9,7 @@ import { Link } from "react-router-dom";
 import Comments from "../comments/Comments";
 import { useState } from "react";
 
-const Post = ({ post }) => {
+const Post = ({ post ,name }) => {
   const [commentOpen, setCommentOpen] = useState(false);
 
   //TEMPORARY

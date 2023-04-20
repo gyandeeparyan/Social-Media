@@ -10,7 +10,7 @@ export const AuthContextProvider = ({ children }) => {
       "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
   });
 
-  const [post, setPost] = useState();
+ 
 
   const login = () => {
     //TO DO

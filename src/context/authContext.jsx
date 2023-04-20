@@ -1,7 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-import postData from "../data/postData";
-export const AuthContext = createContext();
 
+export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState({
@@ -11,6 +10,7 @@ export const AuthContextProvider = ({ children }) => {
       "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
   });
 
+  const [post, setPost] = useState();
 
   const login = () => {
     //TO DO

@@ -11,29 +11,29 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
-      <div className="card">
-        <div className="left">
+    <div className='login'>
+      <div className='card'>
+        <div className='left'>
           <h1>Hello User</h1>
           <p>
-            Introducing "FellowConnect", the next-generation social media app
-            that brings people together like never before. With a sleek and
+            Introducing "Friendify", the next-generation social media app that
+            brings people together like never before. With a sleek and
             user-friendly interface, FellowConnect allows users to create
             profiles, share posts, connect with friends and family, and discover
-            new communities based on shared interests. 
+            new communities based on shared interests.
           </p>
           <span>Don't you have an account?</span>
-          <Link to="/register">
+          <Link to='/register'>
             <button>Register</button>
           </Link>
         </div>
-        <div className="right">
+        <div className='right'>
           <h1>Login</h1>
           <form>
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
+            <input type='text' placeholder='Username' />
+            <input type='password' placeholder='Password' />
             <button onClick={handleLogin}>Login</button>
-            <Link to="/">
+            <Link to='/home'>
               <button>Demo</button>
             </Link>
           </form>

@@ -10,6 +10,8 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Posts from "../../components/posts/Posts";
 import { useState } from "react";
+import { postsData } from "../../data/data";
+import Post from "../../components/post/Post";
 
 const Profile = () => {
   const [follow, setFollow] = useState(true);
@@ -64,7 +66,11 @@ const Profile = () => {
             <MoreVertIcon />
           </div>
         </div>
-        <Posts />
+        <div className='posts'>
+      {postsData.map(post => (
+        <Post post={post} key={post.id} />
+      ))}
+    </div>
       </div>
     </div>
   );

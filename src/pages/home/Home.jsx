@@ -7,11 +7,11 @@ import { useState } from "react";
 const Home = () => {
   const [content, setContent] = useState(postsData);
   const addPost = (name) => {
-    const fakeId = Date.now();
+   
     const newPost = {
-      id: 1,
+      id:1,
       name: "John Doe",
-      userId: fakeId,
+      userId:1,
       profilePic:
         "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
       desc: name,
